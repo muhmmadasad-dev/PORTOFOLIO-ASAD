@@ -1,0 +1,1323 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>[NAMA KAMU] — [ROLE] | Portfolio</title>
+  <meta name="description" content="Portfolio [NAMA KAMU], [ROLE] di [KOTA, INDONESIA]. Pengalaman, proyek, penghargaan, skill, sertifikasi, dan kontak." />
+
+  <!-- Open Graph (placeholder) -->
+  <meta property="og:title" content="[NAMA KAMU] — [ROLE] | Portfolio" />
+  <meta property="og:description" content="Portfolio profesional: pengalaman, proyek, penghargaan, skill, sertifikasi, dan kontak." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/profile.jpg" />
+  <meta property="og:url" content="https://example.com" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Optional: Tailwind config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          boxShadow: {
+            soft: "0 10px 30px rgba(2, 6, 23, 0.08)"
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Custom minimal CSS */
+    :focus-visible { outline: 3px solid rgba(59, 130, 246, 0.6); outline-offset: 3px; }
+    .backdrop-blur-soft { backdrop-filter: blur(10px); }
+    .ring-soft { box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.08); }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900 antialiased">
+  <!-- Skip to content -->
+  <a href="#beranda" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[999] focus:bg-white focus:px-4 focus:py-2 focus:rounded-xl ring-soft">
+    Lewati ke konten
+  </a>
+
+  <!-- Header Sticky -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-soft ring-soft">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <!-- Brand -->
+        <a href="#beranda" class="flex items-center gap-3 font-semibold tracking-tight">
+          <span class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-slate-900 text-white text-sm">ME</span>
+          <div class="leading-tight">
+            <div id="brandName" class="text-sm sm:text-base">[NAMA KAMU]</div>
+            <div id="brandRole" class="text-[11px] text-slate-600">[ROLE]</div>
+          </div>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden lg:block" aria-label="Navigasi utama">
+          <ul id="desktopNav" class="flex items-center gap-1">
+            <!-- Injected by JS -->
+          </ul>
+        </nav>
+
+        <!-- Right actions -->
+        <div class="flex items-center gap-2">
+          <a id="headerCta"
+             href="#kontak"
+             class="hidden sm:inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white shadow-soft hover:bg-slate-800 transition focus:outline-none">
+            Hubungi Saya
+          </a>
+
+          <!-- Mobile menu button -->
+          <button id="menuBtn"
+                  class="inline-flex lg:hidden items-center justify-center rounded-xl p-2 ring-soft bg-white hover:bg-slate-50 transition"
+                  aria-label="Buka menu"
+                  aria-controls="mobileMenu"
+                  aria-expanded="false">
+            <svg id="menuIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Nav -->
+      <div id="mobileMenu" class="lg:hidden hidden pb-4">
+        <div class="rounded-2xl bg-white ring-soft p-3">
+          <nav aria-label="Navigasi mobile">
+            <ul id="mobileNav" class="flex flex-col gap-1">
+              <!-- Injected by JS -->
+            </ul>
+          </nav>
+          <div class="mt-3 flex gap-2">
+            <a id="mobileCvBtn"
+               href="assets/CV.pdf"
+               download
+               class="flex-1 inline-flex items-center justify-center rounded-xl bg-white px-4 py-2 text-sm font-medium ring-soft hover:bg-slate-50 transition">
+              Download CV
+            </a>
+            <a href="#kontak"
+               class="flex-1 inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white shadow-soft hover:bg-slate-800 transition">
+              Hubungi
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="beranda" class="scroll-mt-24">
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <!-- Subtle background -->
+      <div class="absolute inset-0 -z-10">
+        <div class="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-slate-200/70 blur-3xl"></div>
+        <div class="absolute top-10 -right-24 h-72 w-72 rounded-full bg-blue-200/50 blur-3xl"></div>
+        <div class="absolute bottom-0 left-1/2 h-80 w-[40rem] -translate-x-1/2 rounded-full bg-slate-100 blur-3xl"></div>
+      </div>
+
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+        <div class="grid items-center gap-10 lg:grid-cols-12">
+          <div class="lg:col-span-7">
+            <div class="inline-flex items-center gap-2 rounded-full bg-white ring-soft px-4 py-2 text-xs text-slate-700">
+              <span class="inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
+              Tersedia untuk peluang kerja & kolaborasi
+            </div>
+
+            <h1 id="heroHeadline" class="mt-5 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-slate-900">
+              Mechanical Engineering / Operations / Maintenance
+            </h1>
+
+            <p id="heroSubheadline" class="mt-4 text-base sm:text-lg text-slate-700 max-w-2xl">
+              Ringkasan profesional 2–3 kalimat. Fokus pada dampak, leadership, dan kemampuan analisis data untuk meningkatkan performa operasional dan reliability.
+            </p>
+
+            <div class="mt-6 flex flex-col sm:flex-row gap-3">
+              <a id="cvBtn"
+                 href="assets/CV.pdf"
+                 download
+                 class="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-medium ring-soft hover:bg-slate-50 transition">
+                <span>Download CV</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M3 14a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"/>
+                  <path d="M7 10a1 1 0 001.707.707L9 10.414V3a1 1 0 112 0v7.414l.293.293A1 1 0 0012.707 10l-2.999 3a1 1 0 01-1.414 0l-3-3A1 1 0 017 10z"/>
+                </svg>
+              </a>
+              <a href="#kontak"
+                 class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-medium text-white shadow-soft hover:bg-slate-800 transition">
+                Hubungi Saya
+              </a>
+            </div>
+
+            <!-- mini highlights -->
+            <div class="mt-8 grid gap-3 sm:grid-cols-3">
+              <div class="rounded-2xl bg-white ring-soft p-4">
+                <div class="text-xs text-slate-600">Lokasi</div>
+                <div id="heroLocation" class="mt-1 font-medium">[KOTA, INDONESIA]</div>
+              </div>
+              <div class="rounded-2xl bg-white ring-soft p-4">
+                <div class="text-xs text-slate-600">Fokus</div>
+                <div class="mt-1 font-medium">Reliability • Planning • Improvement</div>
+              </div>
+              <div class="rounded-2xl bg-white ring-soft p-4">
+                <div class="text-xs text-slate-600">Tools</div>
+                <div class="mt-1 font-medium">Excel • Reporting • Lean</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Profile card -->
+          <div class="lg:col-span-5">
+            <div class="rounded-3xl bg-white ring-soft p-6 shadow-soft">
+              <div class="flex items-center gap-4">
+                <img src="assets/profile.jpg"
+                     alt="Foto profil [NAMA KAMU]"
+                     class="h-16 w-16 rounded-2xl object-cover ring-soft"
+                     onerror="this.style.display='none'; document.getElementById('profileFallback').classList.remove('hidden');" />
+                <div id="profileFallback" class="hidden h-16 w-16 rounded-2xl bg-slate-100 ring-soft flex items-center justify-center text-slate-500 text-xs">
+                  profile.jpg
+                </div>
+
+                <div class="min-w-0">
+                  <div id="profileName" class="font-semibold truncate">[NAMA KAMU]</div>
+                  <div id="profileRole" class="text-sm text-slate-600 truncate">[ROLE]</div>
+                  <div class="mt-1 text-xs text-slate-500">Terakhir update: <span id="lastUpdated"></span></div>
+                </div>
+              </div>
+
+              <div class="mt-6">
+                <div class="text-sm font-medium">Ringkasan cepat</div>
+                <p id="profileSummary" class="mt-2 text-sm text-slate-700">
+                  2–3 kalimat yang menekankan value: meningkatkan kinerja cabang/operasi, koordinasi lintas fungsi, dan pendekatan berbasis data.
+                </p>
+              </div>
+
+              <div class="mt-6 grid grid-cols-2 gap-3">
+                <a id="quickEmail"
+                   href="mailto:email@example.com"
+                   class="inline-flex items-center justify-center rounded-xl bg-white px-4 py-2 text-sm font-medium ring-soft hover:bg-slate-50 transition">
+                  Email
+                </a>
+                <a id="quickWA"
+                   href="#"
+                   class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white hover:bg-slate-800 transition">
+                  WhatsApp
+                </a>
+              </div>
+
+              <div class="mt-6 rounded-2xl bg-slate-50 ring-soft p-4">
+                <div class="text-xs text-slate-600">Nilai yang saya bawa</div>
+                <ul class="mt-2 space-y-1 text-sm text-slate-700">
+                  <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-slate-900"></span><span>Eksekusi cepat dengan standar rapi</span></li>
+                  <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-slate-900"></span><span>Analisis data untuk keputusan operasional</span></li>
+                  <li class="flex gap-2"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-slate-900"></span><span>Kolaborasi tim & stakeholder management</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistik Ringkas -->
+    <section id="statistik" class="scroll-mt-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <div class="flex items-end justify-between gap-6 flex-wrap">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Statistik Ringkas</h2>
+            <p class="mt-2 text-slate-700 max-w-2xl">
+              Angka singkat yang menonjolkan kredibilitas. Otomatis count-up saat terlihat.
+            </p>
+          </div>
+          <a href="#pengalaman" class="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2 text-sm font-medium ring-soft hover:bg-slate-50 transition">
+            Lihat pengalaman
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L13.586 11H4a1 1 0 110-2h9.586l-3.293-3.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+            </svg>
+          </a>
+        </div>
+
+        <div id="statsGrid" class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang -->
+    <section id="tentang" class="scroll-mt-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <div class="rounded-3xl bg-white ring-soft p-6 sm:p-10 shadow-soft">
+          <div class="grid gap-10 lg:grid-cols-12">
+            <div class="lg:col-span-5">
+              <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Tentang Saya</h2>
+              <p id="aboutSummary" class="mt-4 text-slate-700 leading-relaxed">
+                Ringkasan profesional 2–3 kalimat. Ceritakan fokus utama (maintenance/planning/operations), gaya kerja, dan dampak yang biasa Anda hasilkan.
+              </p>
+
+              <div class="mt-6 rounded-2xl bg-slate-50 ring-soft p-5">
+                <div class="text-sm font-medium">Kekuatan utama</div>
+                <ul id="aboutStrengths" class="mt-3 space-y-2 text-sm text-slate-700">
+                  <!-- Injected by JS -->
+                </ul>
+              </div>
+            </div>
+
+            <div class="lg:col-span-7">
+              <div class="flex items-center justify-between">
+                <h3 class="text-lg font-semibold">Timeline Perjalanan</h3>
+                <span class="text-xs text-slate-500">ringkas & rapi</span>
+              </div>
+
+              <div class="mt-5 relative pl-6">
+                <div class="absolute left-2 top-0 bottom-0 w-px bg-slate-200"></div>
+                <ol id="timeline" class="space-y-5">
+                  <!-- Injected by JS -->
+                </ol>
+              </div>
+
+              <div class="mt-8 grid gap-4 sm:grid-cols-2">
+                <div class="rounded-2xl bg-white ring-soft p-5">
+                  <div class="text-xs text-slate-600">Kompetensi inti</div>
+                  <div id="coreCompetencies" class="mt-2 text-sm text-slate-800">
+                    Reliability • Planning • Reporting • Continuous Improvement
+                  </div>
+                </div>
+                <div class="rounded-2xl bg-white ring-soft p-5">
+                  <div class="text-xs text-slate-600">Preferensi peran</div>
+                  <div id="preferredRoles" class="mt-2 text-sm text-slate-800">
+                    Maintenance Planner • Plant Engineer • Operations Improvement
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pengalaman -->
+    <section id="pengalaman" class="scroll-mt-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <div class="flex items-end justify-between gap-6 flex-wrap">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Pengalaman</h2>
+            <p class="mt-2 text-slate-700 max-w-2xl">
+              Card list dengan dampak (hasil), bukan sekadar tugas.
+            </p>
+          </div>
+          <a href="#proyek" class="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white shadow-soft hover:bg-slate-800 transition">
+            Lihat Proyek
+          </a>
+        </div>
+
+        <div id="experienceList" class="mt-8 grid gap-4">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyek -->
+    <section id="proyek" class="scroll-mt-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <div class="flex items-end justify-between gap-6 flex-wrap">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Proyek / Portofolio</h2>
+            <p class="mt-2 text-slate-700 max-w-2xl">
+              Grid kartu proyek dengan tag. Klik kartu untuk detail (modal tanpa library).
+            </p>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <label for="projectFilter" class="text-sm text-slate-700">Filter:</label>
+            <select id="projectFilter" class="rounded-xl bg-white ring-soft px-3 py-2 text-sm">
+              <option value="all">Semua</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="projectGrid" class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <!-- Injected by JS -->
+        </div>
+
+        <!-- CTA strip -->
+        <div class="mt-10 rounded-3xl bg-slate-900 text-white p-6 sm:p-8 shadow-soft">
+          <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+            <div>
+              <h3 class="text-xl font-semibold">Butuh kandidat yang rapi, data-driven, dan siap eksekusi?</h3>
+              <p class="mt-1 text-white/80">Saya siap berdiskusi untuk posisi [ROLE] atau proyek improvement operasional.</p>
+            </div>
+            <div class="flex gap-3">
+              <a href="#kontak" class="inline-flex items-center justify-center rounded-xl bg-white text-slate-900 px-5 py-3 text-sm font-medium hover:bg-slate-100 transition">
+                Jadwalkan diskusi
+              </a>
+              <a href="assets/CV.pdf" download class="inline-flex items-center justify-center rounded-xl bg-slate-800 px-5 py-3 text-sm font-medium hover:bg-slate-700 transition">
+                Download CV
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Penghargaan -->
+    <section id="penghargaan" class="scroll-mt-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <div>
+          <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Penghargaan</h2>
+          <p class="mt-2 text-slate-700 max-w-2xl">
+            Tampilkan bukti pencapaian: kompetisi, performance award, breaking record, dsb.
+          </p>
+        </div>
+
+        <div id="awardsGrid" class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill -->
+    <section id="skill" class="scroll-mt-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <div class="flex items-end justify-between gap-6 flex-wrap">
+          <div>
+            <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Skill & Tools</h2>
+            <p class="mt-2 text-slate-700 max-w-2xl">
+              Skill chip + progress ringan (opsional). Fokus pada skill yang relevan dengan target role.
+            </p>
+          </div>
+          <a href="#sertifikasi" class="inline-flex items-center gap-2 rounded-xl bg-white px-4 py-2 text-sm font-medium ring-soft hover:bg-slate-50 transition">
+            Lihat Sertifikasi
+          </a>
+        </div>
+
+        <div class="mt-8 grid gap-6 lg:grid-cols-12">
+          <div class="lg:col-span-7 rounded-3xl bg-white ring-soft p-6 shadow-soft">
+            <h3 class="text-lg font-semibold">Skill Utama</h3>
+            <div id="skillsChips" class="mt-4 flex flex-wrap gap-2">
+              <!-- Injected by JS -->
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 rounded-3xl bg-white ring-soft p-6 shadow-soft">
+            <h3 class="text-lg font-semibold">Proficiency (ringan)</h3>
+            <p class="mt-1 text-sm text-slate-600">Sesuaikan persentase sesuai keyakinan Anda.</p>
+            <div id="skillsBars" class="mt-4 space-y-4">
+              <!-- Injected by JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sertifikasi -->
+    <section id="sertifikasi" class="scroll-mt-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <div class="rounded-3xl bg-white ring-soft p-6 sm:p-10 shadow-soft">
+          <div class="flex items-end justify-between gap-6 flex-wrap">
+            <div>
+              <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Sertifikasi</h2>
+              <p class="mt-2 text-slate-700 max-w-2xl">
+                List rapi: nama, issuer, tahun.
+              </p>
+            </div>
+            <a href="#kontak" class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-2 text-sm font-medium text-white shadow-soft hover:bg-slate-800 transition">
+              Tanya detail
+            </a>
+          </div>
+
+          <div class="mt-8 overflow-hidden rounded-2xl ring-soft">
+            <table class="w-full text-left text-sm">
+              <thead class="bg-slate-50 text-slate-700">
+                <tr>
+                  <th class="px-4 py-3 font-medium">Sertifikasi</th>
+                  <th class="px-4 py-3 font-medium">Issuer</th>
+                  <th class="px-4 py-3 font-medium">Tahun</th>
+                </tr>
+              </thead>
+              <tbody id="certTable" class="divide-y divide-slate-100">
+                <!-- Injected by JS -->
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="scroll-mt-24">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid gap-6 lg:grid-cols-12">
+          <div class="lg:col-span-5 rounded-3xl bg-white ring-soft p-6 sm:p-8 shadow-soft">
+            <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Kontak</h2>
+            <p class="mt-2 text-slate-700">
+              Isi form atau gunakan tombol cepat. (Client-side validation)
+            </p>
+
+            <div class="mt-6 grid gap-3">
+              <a id="contactWA" href="#" class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-4 py-3 text-sm font-medium text-white hover:bg-slate-800 transition" aria-label="Chat via WhatsApp">
+                WhatsApp
+              </a>
+              <a id="contactEmail" href="mailto:email@example.com" class="inline-flex items-center justify-center rounded-xl bg-white px-4 py-3 text-sm font-medium ring-soft hover:bg-slate-50 transition" aria-label="Kirim email">
+                Email
+              </a>
+              <a id="contactLinkedIn" href="#" class="inline-flex items-center justify-center rounded-xl bg-white px-4 py-3 text-sm font-medium ring-soft hover:bg-slate-50 transition" aria-label="Buka LinkedIn">
+                LinkedIn
+              </a>
+            </div>
+
+            <div class="mt-8 rounded-2xl bg-slate-50 ring-soft p-5">
+              <div class="text-sm font-semibold">Prefer cara kontak?</div>
+              <p class="mt-2 text-sm text-slate-700">
+                Sertakan kebutuhan Anda (role, lokasi, timeline). Saya akan respon secepatnya.
+              </p>
+              <div class="mt-3 text-xs text-slate-500">
+                Tip: Pastikan email aktif & nomor WhatsApp benar.
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 rounded-3xl bg-white ring-soft p-6 sm:p-8 shadow-soft">
+            <h3 class="text-lg font-semibold">Kirim Pesan</h3>
+
+            <form id="contactForm" class="mt-4 space-y-4" novalidate>
+              <div>
+                <label for="name" class="block text-sm font-medium text-slate-700">Nama</label>
+                <input id="name" name="name" type="text" autocomplete="name"
+                       class="mt-1 w-full rounded-xl bg-white px-4 py-3 text-sm ring-soft focus:ring-2 focus:ring-blue-300"
+                       placeholder="Nama lengkap" required />
+                <p id="errName" class="mt-1 hidden text-xs text-red-600">Nama minimal 2 karakter.</p>
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email"
+                       class="mt-1 w-full rounded-xl bg-white px-4 py-3 text-sm ring-soft focus:ring-2 focus:ring-blue-300"
+                       placeholder="nama@domain.com" required />
+                <p id="errEmail" class="mt-1 hidden text-xs text-red-600">Masukkan email yang valid.</p>
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-medium text-slate-700">Pesan</label>
+                <textarea id="message" name="message" rows="5"
+                          class="mt-1 w-full rounded-xl bg-white px-4 py-3 text-sm ring-soft focus:ring-2 focus:ring-blue-300"
+                          placeholder="Tulis kebutuhan Anda (posisi, lokasi, dll)..." required></textarea>
+                <p id="errMsg" class="mt-1 hidden text-xs text-red-600">Pesan minimal 10 karakter.</p>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <button type="submit"
+                        class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-medium text-white shadow-soft hover:bg-slate-800 transition"
+                        aria-label="Kirim pesan">
+                  Kirim
+                </button>
+                <button type="button" id="resetBtn"
+                        class="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-medium ring-soft hover:bg-slate-50 transition"
+                        aria-label="Reset form">
+                  Reset
+                </button>
+              </div>
+
+              <div id="formStatus" class="hidden rounded-2xl bg-emerald-50 ring-soft p-4 text-sm text-emerald-900">
+                Pesan valid. (Demo) Silakan integrasikan ke backend / email service bila diperlukan.
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white ring-soft mt-12">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+      <div class="grid gap-8 lg:grid-cols-12">
+        <div class="lg:col-span-4">
+          <div class="flex items-center gap-3">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-900 text-white text-sm">ME</span>
+            <div>
+              <div id="footerName" class="font-semibold">[NAMA KAMU]</div>
+              <div id="footerRole" class="text-sm text-slate-600">[ROLE]</div>
+            </div>
+          </div>
+          <p class="mt-4 text-sm text-slate-700">
+            Portfolio 1 halaman dengan gaya corporate clean: rapi, banyak whitespace, dan fokus pada dampak.
+          </p>
+        </div>
+
+        <div class="lg:col-span-8 grid gap-6 sm:grid-cols-3">
+          <div>
+            <div class="text-sm font-semibold">Quick Links</div>
+            <ul class="mt-3 space-y-2 text-sm text-slate-700">
+              <li><a class="hover:text-slate-900" href="#tentang">Tentang</a></li>
+              <li><a class="hover:text-slate-900" href="#pengalaman">Pengalaman</a></li>
+              <li><a class="hover:text-slate-900" href="#proyek">Proyek</a></li>
+              <li><a class="hover:text-slate-900" href="#kontak">Kontak</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="text-sm font-semibold">Sosial</div>
+            <ul class="mt-3 space-y-2 text-sm text-slate-700">
+              <li><a id="footerLinkedIn" class="hover:text-slate-900" href="#" aria-label="LinkedIn">LinkedIn</a></li>
+              <li><a id="footerEmail" class="hover:text-slate-900" href="mailto:email@example.com" aria-label="Email">Email</a></li>
+              <li><a id="footerWA" class="hover:text-slate-900" href="#" aria-label="WhatsApp">WhatsApp</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="text-sm font-semibold">Kontak</div>
+            <div class="mt-3 text-sm text-slate-700 space-y-2">
+              <div><span class="text-slate-500">Lokasi:</span> <span id="footerLocation">[KOTA, INDONESIA]</span></div>
+              <div><span class="text-slate-500">Email:</span> <a id="footerEmail2" href="mailto:email@example.com" class="hover:text-slate-900">email@example.com</a></div>
+              <div><span class="text-slate-500">CV:</span> <a href="assets/CV.pdf" download class="hover:text-slate-900">Download</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-10 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between border-t border-slate-100 pt-6">
+        <div class="text-xs text-slate-500">
+          © <span id="year"></span> <span id="copyrightName">[NAMA KAMU]</span>. All rights reserved.
+        </div>
+        <div class="text-xs text-slate-500">
+          Built with HTML • Tailwind CDN • Vanilla JS
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Modal -->
+  <div id="modalOverlay" class="fixed inset-0 z-[999] hidden items-center justify-center bg-slate-900/60 p-4" role="dialog" aria-modal="true" aria-label="Detail proyek">
+    <div class="w-full max-w-2xl rounded-3xl bg-white ring-soft shadow-soft overflow-hidden">
+      <div class="flex items-start justify-between gap-4 p-5 border-b border-slate-100">
+        <div class="min-w-0">
+          <div id="modalTitle" class="text-lg font-semibold truncate">Judul Proyek</div>
+          <div class="mt-1 flex flex-wrap gap-2" id="modalTags"></div>
+        </div>
+        <button id="modalClose"
+                class="rounded-xl p-2 ring-soft hover:bg-slate-50 transition"
+                aria-label="Tutup modal">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="p-5">
+        <p id="modalDesc" class="text-sm text-slate-700 leading-relaxed">
+          Deskripsi detail proyek.
+        </p>
+
+        <div class="mt-5 grid gap-4 sm:grid-cols-2">
+          <div class="rounded-2xl bg-slate-50 ring-soft p-4">
+            <div class="text-xs text-slate-600">Peran</div>
+            <div id="modalRole" class="mt-1 text-sm font-medium">—</div>
+          </div>
+          <div class="rounded-2xl bg-slate-50 ring-soft p-4">
+            <div class="text-xs text-slate-600">Highlight</div>
+            <ul id="modalHighlights" class="mt-2 space-y-1 text-sm text-slate-700">
+              <!-- Injected -->
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-6 flex flex-col sm:flex-row gap-3">
+          <a id="modalLink"
+             href="#"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-medium text-white hover:bg-slate-800 transition">
+            Buka tautan (placeholder)
+          </a>
+          <button id="modalSecondary"
+                  class="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-medium ring-soft hover:bg-slate-50 transition">
+            Tutup
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    /* -----------------------------
+      DATA KONTEN (EDIT DI SINI)
+    ------------------------------*/
+    const siteData = {
+      name: "MUHAMMAD AS'AD",
+      role: "MECHANICAL ENGINEERING",
+      location: "KUTAI TIMUR, INDONESIA",
+      headline: "Mechanical Engineering | Data-Driven Operations",
+      subheadline: "Mechanical Engineering graduate with hands-on maintenance, engineering design, and strong K3/OHS foundation, bringing data driven execution to improve reliability, productivity, and cost efficiency",
+      email: "asadmuhammad040699@gmail.com",
+      whatsappLink: "https://wa.me/6282324251003",
+      linkedInLink: "https://www.linkedin.com/in/muhammad-asad123",
+      coreCompetencies: "Reliability • Planning • Reporting • Continuous Improvement",
+      preferredRoles: "Maintenance Planner • Plant Engineer • Operations Improvement",
+      aboutSummary: "Saya adalah profesional [ROLE] yang berfokus pada peningkatan performa operasional dan reliability melalui eksekusi rapi, koordinasi lintas fungsi, serta analisis data untuk pengambilan keputusan yang tepat. Terbiasa bekerja dengan target, proses, dan standar keselamatan kerja.",
+      strengths: [
+        "Data-driven: menyusun laporan, monitoring KPI, dan rekomendasi improvement",
+        "Koordinasi lintas tim: operasional, finance, after-sales, dan stakeholder",
+        "Continuous improvement: mindset lean untuk efisiensi dan standardisasi",
+        "Safety & compliance awareness (K3) dalam aktivitas lapangan"
+      ],
+      timeline: [
+        { year: "2019", title: "Organisasi & Leadership", desc: "Memimpin kegiatan/komite kampus dan melatih koordinasi tim serta eksekusi acara." },
+        { year: "2020", title: "Magang / Exposure Industri", desc: "Belajar proses kerja lapangan, perawatan, dan dokumentasi aktivitas operasional." },
+        { year: "2023", title: "Operasional & Manajemen Tim", desc: "Mengelola target, proses, dan evaluasi kinerja berbasis data." },
+        { year: "2025", title: "Fokus Maintenance/Planning", desc: "Menguatkan kompetensi reliability, planning, dan perbaikan berkelanjutan." }
+      ],
+      stats: [
+        { label: "Tahun Pengalaman", value: 3, suffix: "+" },
+        { label: "Proyek / Inisiatif", value: 12, suffix: "+" },
+        { label: "Sertifikasi", value: 6, suffix: "+" },
+        { label: "Achievement", value: 8, suffix: "+" }
+      ],
+      experience: [
+        {
+          title: "Branch Manager",
+          company: "PT Contoh Nusantara (Placeholder)",
+          location: "Balikpapan, ID",
+          period: "2024 — 2025",
+          bullets: [
+            "Memimpin operasional cabang mencakup sales, marketing, finance, dan after-sales untuk mencapai target bulanan.",
+            "Meningkatkan disiplin pelaporan & monitoring KPI sehingga keputusan lebih cepat dan terukur.",
+            "Mengoptimalkan biaya operasional (OPEX) melalui standardisasi proses dan evaluasi berbasis data.",
+            "Membina tim: coaching, evaluasi kinerja, dan koordinasi lintas fungsi untuk produktivitas.",
+            "Mencapai pencapaian kinerja (placeholder) melalui strategi eksekusi lapangan yang terstruktur."
+          ]
+        },
+        {
+          title: "Koordinator Wilayah",
+          company: "PT Contoh Sakti Group (Placeholder)",
+          location: "Kalimantan, ID",
+          period: "2022 — 2024",
+          bullets: [
+            "Mengelola aktivitas operasional & pemasaran multi-area dengan jadwal kerja dan pembagian wilayah yang jelas.",
+            "Membangun sistem dokumentasi dan pelaporan untuk evaluasi rutin dan pengambilan keputusan.",
+            "Menerapkan pendekatan data-driven untuk peningkatan workflow dan konsistensi eksekusi tim.",
+            "Berkoordinasi dengan stakeholder lokal untuk memperlancar operasional dan pencapaian target.",
+            "Mendukung pengembangan tim melalui mentoring, target setting, dan review performa."
+          ]
+        }
+      ],
+      projects: [
+        {
+          id: "p1",
+          title: "Dashboard KPI Operasional (Excel/Sheets)",
+          category: "Data & Reporting",
+          tags: ["Reporting", "KPI", "Excel"],
+          role: "Owner / Analyst",
+          description: "Membuat dashboard KPI untuk monitoring performa (target, realisasi, trend) agar tim bisa mengambil tindakan cepat berdasarkan data.",
+          highlights: [
+            "Template KPI yang mudah dipakai tim",
+            "Trend bulanan & insight tindakan",
+            "Standarisasi definisi metrik"
+          ],
+          link: "#"
+        },
+        {
+          id: "p2",
+          title: "Standarisasi SOP & Checklist Inspeksi",
+          category: "Process Improvement",
+          tags: ["SOP", "Quality", "Safety"],
+          role: "Coordinator",
+          description: "Menyusun SOP dan checklist inspeksi untuk meningkatkan konsistensi eksekusi serta kepatuhan standar keselamatan dan kualitas.",
+          highlights: [
+            "Checklist inspeksi yang ringkas",
+            "Audit internal sederhana",
+            "Peningkatan disiplin dokumentasi"
+          ],
+          link: "#"
+        },
+        {
+          id: "p3",
+          title: "Rencana Preventive Maintenance (Template)",
+          category: "Maintenance",
+          tags: ["Maintenance", "Planning", "Reliability"],
+          role: "Planner (Demo)",
+          description: "Membangun template jadwal PM dan tracking breakdown untuk membantu perencanaan, pengendalian downtime, dan evaluasi MTBF/MTTR.",
+          highlights: [
+            "Jadwal PM mingguan/bulanan",
+            "Log breakdown & tindakan",
+            "Ringkasan metrik dasar"
+          ],
+          link: "#"
+        },
+        {
+          id: "p4",
+          title: "Improvement Workflow Laporan Lapangan",
+          category: "Operations",
+          tags: ["Operations", "Workflow", "Communication"],
+          role: "Lead",
+          description: "Menyederhanakan alur pelaporan lapangan agar informasi cepat sampai ke pengambil keputusan dan mengurangi rework.",
+          highlights: [
+            "Format laporan satu halaman",
+            "Poin tindakan yang jelas",
+            "Waktu kompilasi lebih singkat"
+          ],
+          link: "#"
+        }
+      ],
+      awards: [
+        { title: "Best Performance Area (Placeholder)", year: "2024", desc: "Penghargaan kinerja area atas pencapaian target dan pengembangan talenta." },
+        { title: "Breaking Record Penjualan (Placeholder)", year: "2023", desc: "Mencapai rekor kinerja bulanan dengan eksekusi strategi yang disiplin." },
+        { title: "Juara 1 Kompetisi (Placeholder)", year: "2018", desc: "Pencapaian kompetisi tingkat fakultas/universitas." },
+        { title: "Juara 2 Kompetisi (Placeholder)", year: "2019", desc: "Pencapaian kompetisi lintas fakultas." }
+      ],
+      skillChips: [
+        "Maintenance Planning", "Reliability Basics (MTBF/MTTR)", "Operations Management", "Data Analysis (Excel)",
+        "Reporting & Documentation", "Continuous Improvement (Lean)", "Communication", "Leadership"
+      ],
+      skillBars: [
+        { name: "Excel / Reporting", level: 85 },
+        { name: "Operational Execution", level: 80 },
+        { name: "Maintenance Planning (Basic)", level: 70 },
+        { name: "Lean / Improvement", level: 65 }
+      ],
+      certifications: [
+        { name: "ISO 45001:2018 — Sistem Manajemen K3 (Training)", issuer: "Issuer (Placeholder)", year: "2024" },
+        { name: "AK3U — Calon Ahli K3 Umum (Placeholder)", issuer: "Kemnaker / Lembaga (Placeholder)", year: "2025" },
+        { name: "Lean Manufacturing (Certification)", issuer: "Issuer (Placeholder)", year: "2024" },
+        { name: "Basic SolidWorks (Training)", issuer: "Issuer (Placeholder)", year: "2020" }
+      ]
+    };
+
+    /* -----------------------------
+      NAV ITEMS
+    ------------------------------*/
+    const navItems = [
+      { id: "beranda", label: "Beranda" },
+      { id: "tentang", label: "Tentang" },
+      { id: "pengalaman", label: "Pengalaman" },
+      { id: "proyek", label: "Proyek" },
+      { id: "penghargaan", label: "Penghargaan" },
+      { id: "skill", label: "Skill" },
+      { id: "sertifikasi", label: "Sertifikasi" },
+      { id: "kontak", label: "Kontak" }
+    ];
+
+    /* -----------------------------
+      HELPERS
+    ------------------------------*/
+    const $ = (sel, parent=document) => parent.querySelector(sel);
+    const $$ = (sel, parent=document) => Array.from(parent.querySelectorAll(sel));
+
+    function escapeHtml(str) {
+      return String(str)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function createTag(text) {
+      return `<span class="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700">${escapeHtml(text)}</span>`;
+    }
+
+    /* -----------------------------
+      RENDER NAV
+    ------------------------------*/
+    function renderNav() {
+      const desktop = $("#desktopNav");
+      const mobile = $("#mobileNav");
+
+      const makeLink = (item, isMobile=false) => {
+        const base = "block rounded-xl px-3 py-2 text-sm font-medium transition focus:outline-none";
+        const idle = isMobile
+          ? "text-slate-700 hover:bg-slate-50"
+          : "text-slate-700 hover:bg-slate-50";
+        const active = isMobile
+          ? "bg-slate-900 text-white"
+          : "bg-slate-900 text-white";
+
+        return `
+          <li>
+            <a href="#${item.id}"
+               data-nav="${item.id}"
+               class="${base} ${idle}"
+               aria-label="Menu ${escapeHtml(item.label)}">
+              ${escapeHtml(item.label)}
+            </a>
+          </li>
+        `;
+      };
+
+      desktop.innerHTML = navItems.map(i => makeLink(i, false)).join("");
+      mobile.innerHTML = navItems.map(i => makeLink(i, true)).join("");
+    }
+
+    /* -----------------------------
+      RENDER CONTENT
+    ------------------------------*/
+    function hydrateContent() {
+      // Brand / hero
+      $("#brandName").textContent = siteData.name;
+      $("#brandRole").textContent = siteData.role;
+
+      $("#heroHeadline").textContent = siteData.headline;
+      $("#heroSubheadline").textContent = siteData.subheadline;
+      $("#heroLocation").textContent = siteData.location;
+
+      $("#profileName").textContent = siteData.name;
+      $("#profileRole").textContent = siteData.role;
+      $("#profileSummary").textContent = siteData.subheadline;
+
+      $("#footerName").textContent = siteData.name;
+      $("#footerRole").textContent = siteData.role;
+      $("#footerLocation").textContent = siteData.location;
+      $("#copyrightName").textContent = siteData.name;
+
+      // Meta last updated
+      const now = new Date();
+      const fmt = new Intl.DateTimeFormat("id-ID", { year: "numeric", month: "long", day: "2-digit" });
+      $("#lastUpdated").textContent = fmt.format(now);
+
+      // Links
+      const emailHref = `mailto:${siteData.email}`;
+      $("#quickEmail").setAttribute("href", emailHref);
+      $("#contactEmail").setAttribute("href", emailHref);
+      $("#footerEmail").setAttribute("href", emailHref);
+      $("#footerEmail2").setAttribute("href", emailHref);
+      $("#footerEmail2").textContent = siteData.email;
+
+      $("#quickWA").setAttribute("href", siteData.whatsappLink);
+      $("#contactWA").setAttribute("href", siteData.whatsappLink);
+      $("#footerWA").setAttribute("href", siteData.whatsappLink);
+
+      $("#contactLinkedIn").setAttribute("href", siteData.linkedInLink);
+      $("#footerLinkedIn").setAttribute("href", siteData.linkedInLink);
+
+      // About
+      $("#aboutSummary").textContent = siteData.aboutSummary;
+      $("#coreCompetencies").textContent = siteData.coreCompetencies;
+      $("#preferredRoles").textContent = siteData.preferredRoles;
+
+      // Strengths
+      $("#aboutStrengths").innerHTML = siteData.strengths.map(s => `
+        <li class="flex gap-2">
+          <span class="mt-2 h-1.5 w-1.5 rounded-full bg-slate-900"></span>
+          <span>${escapeHtml(s)}</span>
+        </li>
+      `).join("");
+
+      // Timeline
+      $("#timeline").innerHTML = siteData.timeline.map(t => `
+        <li class="relative">
+          <div class="absolute -left-[0.63rem] top-2 h-3 w-3 rounded-full bg-slate-900"></div>
+          <div class="rounded-2xl bg-white ring-soft p-4">
+            <div class="flex items-center justify-between gap-3">
+              <div class="text-sm font-semibold">${escapeHtml(t.title)}</div>
+              <div class="text-xs text-slate-500">${escapeHtml(t.year)}</div>
+            </div>
+            <p class="mt-2 text-sm text-slate-700">${escapeHtml(t.desc)}</p>
+          </div>
+        </li>
+      `).join("");
+
+      // Stats
+      $("#statsGrid").innerHTML = siteData.stats.map((s, idx) => `
+        <div class="rounded-3xl bg-white ring-soft p-6 shadow-soft">
+          <div class="text-xs text-slate-600">${escapeHtml(s.label)}</div>
+          <div class="mt-3 flex items-baseline gap-2">
+            <div class="text-3xl font-semibold tracking-tight">
+              <span class="stat-number" data-target="${s.value}" data-suffix="${escapeHtml(s.suffix || "")}" data-index="${idx}">0</span>
+            </div>
+            <div class="text-sm text-slate-600">total</div>
+          </div>
+          <div class="mt-4 h-1.5 w-full rounded-full bg-slate-100 overflow-hidden">
+            <div class="h-full w-1/2 bg-slate-900/20"></div>
+          </div>
+        </div>
+      `).join("");
+
+      // Experience
+      $("#experienceList").innerHTML = siteData.experience.map(exp => `
+        <article class="rounded-3xl bg-white ring-soft p-6 sm:p-7 shadow-soft">
+          <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
+            <div class="min-w-0">
+              <h3 class="text-lg font-semibold">${escapeHtml(exp.title)}</h3>
+              <p class="mt-1 text-sm text-slate-700">
+                <span class="font-medium">${escapeHtml(exp.company)}</span>
+                <span class="text-slate-400"> • </span>
+                <span>${escapeHtml(exp.location)}</span>
+              </p>
+            </div>
+            <div class="shrink-0 inline-flex items-center rounded-full bg-slate-100 px-4 py-2 text-xs font-medium text-slate-700">
+              ${escapeHtml(exp.period)}
+            </div>
+          </div>
+
+          <ul class="mt-5 space-y-2 text-sm text-slate-700">
+            ${exp.bullets.map(b => `
+              <li class="flex gap-2">
+                <span class="mt-2 h-1.5 w-1.5 rounded-full bg-slate-900"></span>
+                <span>${escapeHtml(b)}</span>
+              </li>
+            `).join("")}
+          </ul>
+        </article>
+      `).join("");
+
+      // Projects filter options
+      const categories = Array.from(new Set(siteData.projects.map(p => p.category)));
+      const filter = $("#projectFilter");
+      categories.forEach(c => {
+        const opt = document.createElement("option");
+        opt.value = c;
+        opt.textContent = c;
+        filter.appendChild(opt);
+      });
+
+      renderProjects("all");
+
+      // Awards
+      $("#awardsGrid").innerHTML = siteData.awards.map(a => `
+        <div class="rounded-3xl bg-white ring-soft p-5 shadow-soft">
+          <div class="flex items-center justify-between gap-3">
+            <div class="text-sm font-semibold">${escapeHtml(a.title)}</div>
+            <div class="text-xs text-slate-500">${escapeHtml(a.year)}</div>
+          </div>
+          <p class="mt-3 text-sm text-slate-700">${escapeHtml(a.desc)}</p>
+        </div>
+      `).join("");
+
+      // Skills chips
+      $("#skillsChips").innerHTML = siteData.skillChips.map(s => `
+        <span class="inline-flex items-center rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-800 ring-soft">
+          ${escapeHtml(s)}
+        </span>
+      `).join("");
+
+      // Skills bars
+      $("#skillsBars").innerHTML = siteData.skillBars.map(s => `
+        <div>
+          <div class="flex items-center justify-between">
+            <div class="text-sm font-medium">${escapeHtml(s.name)}</div>
+            <div class="text-xs text-slate-500">${escapeHtml(String(s.level))}%</div>
+          </div>
+          <div class="mt-2 h-2 w-full rounded-full bg-slate-100 overflow-hidden ring-soft">
+            <div class="h-full bg-slate-900/30" style="width:${Math.max(0, Math.min(100, s.level))}%"></div>
+          </div>
+        </div>
+      `).join("");
+
+      // Certifications table
+      $("#certTable").innerHTML = siteData.certifications.map(c => `
+        <tr class="bg-white">
+          <td class="px-4 py-3 font-medium text-slate-900">${escapeHtml(c.name)}</td>
+          <td class="px-4 py-3 text-slate-700">${escapeHtml(c.issuer)}</td>
+          <td class="px-4 py-3 text-slate-700">${escapeHtml(c.year)}</td>
+        </tr>
+      `).join("");
+
+      // Footer year
+      $("#year").textContent = String(new Date().getFullYear());
+    }
+
+    function renderProjects(category) {
+      const grid = $("#projectGrid");
+      const filtered = category === "all"
+        ? siteData.projects
+        : siteData.projects.filter(p => p.category === category);
+
+      grid.innerHTML = filtered.map(p => `
+        <button type="button"
+                class="group text-left rounded-3xl bg-white ring-soft p-6 shadow-soft hover:-translate-y-0.5 hover:shadow-lg transition"
+                data-project="${escapeHtml(p.id)}"
+                aria-label="Buka detail proyek ${escapeHtml(p.title)}">
+          <div class="flex items-start justify-between gap-3">
+            <div class="min-w-0">
+              <div class="text-xs text-slate-600">${escapeHtml(p.category)}</div>
+              <h3 class="mt-2 text-lg font-semibold tracking-tight group-hover:text-slate-900">
+                ${escapeHtml(p.title)}
+              </h3>
+            </div>
+            <span class="shrink-0 inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-50 ring-soft">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-slate-700" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L13.586 11H4a1 1 0 110-2h9.586l-3.293-3.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </span>
+          </div>
+
+          <p class="mt-3 text-sm text-slate-700 line-clamp-3">
+            ${escapeHtml(p.description)}
+          </p>
+
+          <div class="mt-4 flex flex-wrap gap-2">
+            ${p.tags.map(t => createTag(t)).join("")}
+          </div>
+        </button>
+      `).join("");
+
+      // bind click
+      $$("[data-project]").forEach(btn => {
+        btn.addEventListener("click", () => openProjectModal(btn.getAttribute("data-project")));
+      });
+    }
+
+    /* -----------------------------
+      SCROLLSPY
+    ------------------------------*/
+    function setupScrollSpy() {
+      const sections = navItems.map(i => document.getElementById(i.id)).filter(Boolean);
+      const navLinks = $$("[data-nav]");
+
+      const setActive = (id) => {
+        navLinks.forEach(a => {
+          const isActive = a.getAttribute("data-nav") === id;
+          a.classList.toggle("bg-slate-900", isActive);
+          a.classList.toggle("text-white", isActive);
+          a.classList.toggle("text-slate-700", !isActive);
+        });
+      };
+
+      const obs = new IntersectionObserver((entries) => {
+        // pick the most visible entry
+        const visible = entries
+          .filter(e => e.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+        if (visible && visible.target?.id) setActive(visible.target.id);
+      }, { root: null, threshold: [0.2, 0.35, 0.5, 0.65] });
+
+      sections.forEach(s => obs.observe(s));
+
+      // close mobile menu on click
+      navLinks.forEach(a => {
+        a.addEventListener("click", () => closeMobileMenu());
+      });
+    }
+
+    /* -----------------------------
+      MOBILE MENU
+    ------------------------------*/
+    function toggleMobileMenu() {
+      const menu = $("#mobileMenu");
+      const btn = $("#menuBtn");
+      const expanded = btn.getAttribute("aria-expanded") === "true";
+
+      if (expanded) {
+        closeMobileMenu();
+      } else {
+        menu.classList.remove("hidden");
+        btn.setAttribute("aria-expanded", "true");
+        $("#menuIcon").innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>';
+      }
+    }
+
+    function closeMobileMenu() {
+      const menu = $("#mobileMenu");
+      const btn = $("#menuBtn");
+      if (!menu.classList.contains("hidden")) {
+        menu.classList.add("hidden");
+        btn.setAttribute("aria-expanded", "false");
+        $("#menuIcon").innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>';
+      }
+    }
+
+    /* -----------------------------
+      COUNT-UP (IntersectionObserver)
+    ------------------------------*/
+    function setupCountUp() {
+      const numbers = $$(".stat-number");
+      const ran = new Set();
+
+      const animate = (el) => {
+        const target = Number(el.getAttribute("data-target") || "0");
+        const suffix = el.getAttribute("data-suffix") || "";
+        const duration = 900; // ms
+        const start = performance.now();
+        const from = 0;
+
+        function frame(t) {
+          const p = Math.min(1, (t - start) / duration);
+          const val = Math.round(from + (target - from) * (1 - Math.pow(1 - p, 3))); // easeOutCubic-ish
+          el.textContent = String(val) + suffix;
+          if (p < 1) requestAnimationFrame(frame);
+        }
+        requestAnimationFrame(frame);
+      };
+
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            const el = e.target;
+            const key = el.getAttribute("data-index");
+            if (!ran.has(key)) {
+              ran.add(key);
+              animate(el);
+            }
+          }
+        });
+      }, { threshold: 0.35 });
+
+      numbers.forEach(n => obs.observe(n));
+    }
+
+    /* -----------------------------
+      PROJECT MODAL
+    ------------------------------*/
+    let lastFocusedEl = null;
+
+    function openProjectModal(projectId) {
+      const p = siteData.projects.find(x => x.id === projectId);
+      if (!p) return;
+
+      lastFocusedEl = document.activeElement;
+
+      $("#modalTitle").textContent = p.title;
+      $("#modalDesc").textContent = p.description;
+      $("#modalRole").textContent = p.role;
+      $("#modalTags").innerHTML = p.tags.map(t => createTag(t)).join("");
+      $("#modalHighlights").innerHTML = p.highlights.map(h => `
+        <li class="flex gap-2">
+          <span class="mt-2 h-1.5 w-1.5 rounded-full bg-slate-900"></span>
+          <span>${escapeHtml(h)}</span>
+        </li>
+      `).join("");
+
+      const link = $("#modalLink");
+      link.setAttribute("href", p.link || "#");
+      link.textContent = (p.link && p.link !== "#") ? "Buka tautan" : "Tautan (placeholder)";
+
+      const overlay = $("#modalOverlay");
+      overlay.classList.remove("hidden");
+      overlay.classList.add("flex");
+
+      // trap-ish: focus close
+      $("#modalClose").focus();
+
+      // disable background scroll
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeProjectModal() {
+      const overlay = $("#modalOverlay");
+      overlay.classList.add("hidden");
+      overlay.classList.remove("flex");
+      document.body.style.overflow = "";
+
+      if (lastFocusedEl && typeof lastFocusedEl.focus === "function") {
+        lastFocusedEl.focus();
+      }
+    }
+
+    function setupModalEvents() {
+      $("#modalClose").addEventListener("click", closeProjectModal);
+      $("#modalSecondary").addEventListener("click", closeProjectModal);
+
+      $("#modalOverlay").addEventListener("click", (e) => {
+        if (e.target === $("#modalOverlay")) closeProjectModal();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          const overlay = $("#modalOverlay");
+          if (!overlay.classList.contains("hidden")) closeProjectModal();
+        }
+      });
+    }
+
+    /* -----------------------------
+      PROJECT FILTER
+    ------------------------------*/
+    function setupProjectFilter() {
+      $("#projectFilter").addEventListener("change", (e) => {
+        renderProjects(e.target.value);
+      });
+    }
+
+    /* -----------------------------
+      CONTACT FORM VALIDATION
+    ------------------------------*/
+    function setupForm() {
+      const form = $("#contactForm");
+      const status = $("#formStatus");
+      const resetBtn = $("#resetBtn");
+
+      const show = (el) => el.classList.remove("hidden");
+      const hide = (el) => el.classList.add("hidden");
+
+      const validEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+      function validate() {
+        const name = $("#name").value.trim();
+        const email = $("#email").value.trim();
+        const msg = $("#message").value.trim();
+
+        let ok = true;
+
+        if (name.length < 2) { show($("#errName")); ok = false; } else hide($("#errName"));
+        if (!validEmail(email)) { show($("#errEmail")); ok = false; } else hide($("#errEmail"));
+        if (msg.length < 10) { show($("#errMsg")); ok = false; } else hide($("#errMsg"));
+
+        return ok;
+      }
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        status.classList.add("hidden");
+
+        const ok = validate();
+        if (ok) {
+          status.classList.remove("hidden");
+          // Demo only: here you can integrate API/email service.
+          form.reset();
+          hide($("#errName")); hide($("#errEmail")); hide($("#errMsg"));
+        }
+      });
+
+      ["input", "blur"].forEach(evt => {
+        form.addEventListener(evt, (e) => {
+          if (["name","email","message"].includes(e.target.id)) validate();
+        }, true);
+      });
+
+      resetBtn.addEventListener("click", () => {
+        form.reset();
+        status.classList.add("hidden");
+        hide($("#errName")); hide($("#errEmail")); hide($("#errMsg"));
+      });
+    }
+
+    /* -----------------------------
+      INIT
+    ------------------------------*/
+    function init() {
+      renderNav();
+      hydrateContent();
+      setupScrollSpy();
+      setupCountUp();
+      setupModalEvents();
+      setupProjectFilter();
+      setupForm();
+
+      $("#menuBtn").addEventListener("click", toggleMobileMenu);
+
+      // close mobile menu if resize to desktop
+      window.addEventListener("resize", () => {
+        if (window.innerWidth >= 1024) closeMobileMenu();
+      });
+
+      // close mobile menu if click outside
+      document.addEventListener("click", (e) => {
+        const menu = $("#mobileMenu");
+        const btn = $("#menuBtn");
+        if (menu.classList.contains("hidden")) return;
+        const within = menu.contains(e.target) || btn.contains(e.target);
+        if (!within) closeMobileMenu();
+      });
+    }
+
+    init();
+  </script>
+</body>
+</html>
