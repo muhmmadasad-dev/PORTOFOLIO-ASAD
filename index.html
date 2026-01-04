@@ -265,8 +265,8 @@
 
             <div class="lg:col-span-7">
               <div class="flex items-center justify-between">
-                <h3 class="text-lg font-semibold">Timeline Perjalanan</h3>
-                <span class="text-xs text-slate-500">ringkas & rapi</span>
+                <h3 class="text-lg font-semibold">Timeline Karier</h3>
+                <span class="text-xs text-slate-500">Highlight perjalanan</span>
               </div>
 
               <div class="mt-5 relative pl-6">
@@ -346,7 +346,7 @@
           <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
             <div>
               <h3 class="text-xl font-semibold">Butuh kandidat yang rapi, data-driven, dan siap eksekusi?</h3>
-              <p class="mt-1 text-white/80">Saya siap berdiskusi untuk posisi [ROLE] atau proyek improvement operasional.</p>
+              <p class="mt-1 text-white/80">Saya siap berdiskusi</p>
             </div>
             <div class="flex gap-3">
               <a href="#kontak" class="inline-flex items-center justify-center rounded-xl bg-white text-slate-900 px-5 py-3 text-sm font-medium hover:bg-slate-100 transition">
@@ -418,7 +418,7 @@
         <div class="rounded-3xl bg-white ring-soft p-6 sm:p-10 shadow-soft">
           <div class="flex items-end justify-between gap-6 flex-wrap">
             <div>
-              <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Sertifikasi</h2>
+              <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight">Sertifikasi dan Pelatihan</h2>
               <p class="mt-2 text-slate-700 max-w-2xl">
                 Pelatihan yang saya ambil untuk memperkuat K3, cara kerja yang rapi, dan disiplin kerja.
               </p>
@@ -432,7 +432,7 @@
             <table class="w-full text-left text-sm">
               <thead class="bg-slate-50 text-slate-700">
                 <tr>
-                  <th class="px-4 py-3 font-medium">Sertifikasi</th>
+                  <th class="px-4 py-3 font-medium">Sertifikasi / Pelatihan</th>
                   <th class="px-4 py-3 font-medium">Issuer</th>
                   <th class="px-4 py-3 font-medium">Tahun</th>
                 </tr>
@@ -644,6 +644,40 @@
       </div>
     </div>
   </div>
+  
+  <!-- PDF Modal (Sertifikat/Pelatihan) -->
+<div id="pdfOverlay" class="fixed inset-0 z-[999] hidden items-center justify-center bg-slate-900/60 p-4" role="dialog" aria-modal="true" aria-label="Bukti sertifikat">
+  <div class="w-full max-w-4xl rounded-3xl bg-white ring-soft shadow-soft overflow-hidden">
+    <div class="flex items-start justify-between gap-4 p-5 border-b border-slate-100">
+      <div class="min-w-0">
+        <div id="pdfTitle" class="text-lg font-semibold truncate">Bukti Sertifikat</div>
+        <div class="mt-1 text-xs text-slate-600">Preview PDF</div>
+      </div>
+      <button id="pdfClose" class="rounded-xl p-2 ring-soft hover:bg-slate-50 transition" aria-label="Tutup PDF">✕</button>
+    </div>
+
+    <div class="p-5">
+      <div class="rounded-2xl overflow-hidden ring-soft bg-slate-50" style="height: 70vh;">
+        <iframe id="pdfFrame" class="w-full h-full" src="" title="PDF viewer"></iframe>
+      </div>
+
+      <div class="mt-4 flex flex-col sm:flex-row gap-3">
+        <a id="pdfOpenNew" href="#" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center justify-center rounded-xl bg-slate-900 px-5 py-3 text-sm font-medium text-white hover:bg-slate-800 transition">
+          Buka di tab baru
+        </a>
+        <a id="pdfDownload" href="#" download
+           class="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-medium ring-soft hover:bg-slate-50 transition">
+          Download PDF
+        </a>
+        <button id="pdfSecondary"
+                class="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-medium ring-soft hover:bg-slate-50 transition">
+          Tutup
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <script>
     /* -----------------------------
@@ -678,8 +712,8 @@
       stats: [
         { label: "Tahun Pengalaman", value: 1, suffix: "+" },
         { label: "Proyek / Inisiatif", value: 6, suffix: "+" },
-        { label: "Sertifikasi", value: 3, suffix: "+" },
-        { label: "Achievement", value: 2, suffix: "+" }
+        { label: "Sertifikasi", value: 12, suffix: "+" },
+        { label: "Achievement", value: 4, suffix: "+" }
       ],
       experience: [
         {
@@ -806,10 +840,10 @@
         }
       ],
       awards: [
-        { title: "Best Performance Area (Placeholder)", year: "2024", desc: "Penghargaan kinerja area atas pencapaian target dan pengembangan talenta." },
-        { title: "Breaking Record Penjualan (Placeholder)", year: "2023", desc: "Mencapai rekor kinerja bulanan dengan eksekusi strategi yang disiplin." },
-        { title: "Juara 1 Kompetisi (Placeholder)", year: "2018", desc: "Pencapaian kompetisi tingkat fakultas/universitas." },
-        { title: "Juara 2 Kompetisi (Placeholder)", year: "2019", desc: "Pencapaian kompetisi lintas fakultas." }
+        { title: "Best Performance Area", issuer: "Head Office Assessment", year: "2024", desc: "Penghargaan kinerja area berdasarkan penilaian Head Office atas pencapaian target dan pengembangan talenta" },
+        { title: "Breaking Record Penjualan", issuer: "Main Dealer & Internal (Head Office)", year: "2024", desc: "Mencetak rekor penjualan bulanan melalui strategi yang tepat dan eksekusi tim yang disiplin" },
+        { title: "Juara 1 Badminton", issuer: "POR FT (Fakultas Teknik)", year: "2018", desc: "Pencapaian pada kompetisi tingkat fakultas (POR FT 2018)" },
+        { title: "Juara 2 Badminton", issuer: "Psycho Cup (Jurusan Psikologi) — Open Tournament", year: "2019", desc: "Pencapaian pada kompetisi tingkat universitas" }
       ],
       skillChips: [
         "Maintenance Planning", "Reliability Basics (MTBF/MTTR)", "Operations Management", "Data Analysis (Excel)",
@@ -822,11 +856,22 @@
         { name: "Lean / Improvement", level: 65 }
       ],
       certifications: [
-        { name: "ISO 45001:2018 — Sistem Manajemen K3 (Training)", issuer: "Issuer (Placeholder)", year: "2024" },
-        { name: "AK3U — Calon Ahli K3 Umum (Placeholder)", issuer: "Kemnaker / Lembaga (Placeholder)", year: "2025" },
-        { name: "Lean Manufacturing (Certification)", issuer: "Issuer (Placeholder)", year: "2024" },
-        { name: "Basic SolidWorks (Training)", issuer: "Issuer (Placeholder)", year: "2020" }
-      ]
+        { name: "Sertifikasi Calon Ahli K3 Umum", issuer: "Kementerian Ketenagakerjaan Republik Indonesia (Kemnaker RI)", year: "2023", pdf: "assets/cert/ak3u-kemnaker.pdf" },
+        { name: "Sertifikasi Lean Manufacturing", issuer: "TÜV Rheinland", year: "2020", pdf: "assets/cert/lean-manufacturing.pdf" },
+        { name: "Sertifikasi Basic SolidWorks", issuer: "Universitas Diponegoro", year: "2018", pdf: "" },
+        { name: "Pelatihan Dasar Penanggulangan Kebakaran (Fire Fighting Basic)", issuer: "PT Garuda Systrain Interindo", year: "2023", pdf: "assets/cert/penangg-kebakaran.pdf" },
+        { name: "Pelatihan Investigasi Kecelakaan (Accident Investigation)", issuer: "PT Garuda Systrain Interindo", year: "2023", pdf: "assets/cert/inves-kecelakaan.pdf" },
+        { name: "Pelatihan ISO 9001:2015 Sistem Manajemen Mutu (QMS)", issuer: "PT Garuda Systrain Interindo", year: "2023", pdf: "assets/cert/manajemen-mutu.pdf" },
+        { name: "Pelatihan ISO 14001:2015 Sistem Manajemen Lingkungan (EMS)", issuer: "PT Garuda Systrain Interindo", year: "2023", pdf: "assets/cert/manajemen-lingkugan.pdf" },
+        { name: "Pelatihan ISO 19011:2018 Pedoman Audit Sistem Manajemen (Audit Guidelines)", issuer: "PT Garuda Systrain Interindo", year: "2023", pdf: "assets/cert/manajemen-audit.pdf" },
+        { name: "Pelatihan ISO 45001:2018 Sistem Manajemen K3", issuer: "PT Garuda Systrain Interindo", year: "2023", pdf: "assets/cert/manajemen-k3.pdf" },
+        { name: "Pelatihan K3 Industri Minyak dan Gas Darat (Oil and Gas OHS Onshore)", issuer: "PT Garuda Systrain Interindo", year: "2023", pdf: "assets/cert/minyak-gas-darat.pdf" },
+        { name: "Pelatihan K3 Industri Minyak dan Gas Lepas Pantai (Oil and Gas OHS Offshore)", issuer: "PT Garuda Systrain Interindo", year: "2023", pdf: "assets/cert/minyak-gas-pantai.pdf" },
+        { name: "Pelatihan K3 Industri Pertambangan (Mining OHS)", issuer: "PT Garuda Systrain Interindo", year: "2023", pdf: "assets/cert/k3-pertambangan.pdf" },
+        { name: "Pelatihan Penguncian dan Pelabelan (Lock Out Tag Out LOTO)", issuer: "PT Garuda Systrain Interindo", year: "2023", pdf: "assets/cert/loto.pdf" },
+        { name: "Pelatihan Rencana Tanggap Darurat (Emergency Response Plan ERT)", issuer: "PT Garuda Systrain Interindo", year: "2023", pdf: "assets/cert/tanggap-darurat.pdf" },
+        { name: "Pelatihan Sistem Manajemen Keselamatan Kontraktor (CSMS)", issuer: "PT Garuda Systrain Interindo", year: "2023", pdf: "assets/cert/csms.pdf" }
+        ]
     };
 
     /* -----------------------------
@@ -956,7 +1001,7 @@ document.getElementById("footerEmail2").textContent = siteData.email;
       // Timeline
       $("#timeline").innerHTML = siteData.timeline.map(t => `
         <li class="relative">
-          <div class="absolute -left-[0.63rem] top-2 h-3 w-3 rounded-full bg-slate-900"></div>
+          <div class="absolute -left-4 top-5 h-3 w-3 -translate-x-1/2 rounded-full bg-slate-900"></div>
           <div class="rounded-2xl bg-white ring-soft p-4">
             <div class="flex items-center justify-between gap-3">
               <div class="text-sm font-semibold">${escapeHtml(t.title)}</div>
@@ -1026,9 +1071,12 @@ document.getElementById("footerEmail2").textContent = siteData.email;
       // Awards
       $("#awardsGrid").innerHTML = siteData.awards.map(a => `
         <div class="rounded-3xl bg-white ring-soft p-5 shadow-soft">
-          <div class="flex items-center justify-between gap-3">
-            <div class="text-sm font-semibold">${escapeHtml(a.title)}</div>
-            <div class="text-xs text-slate-500">${escapeHtml(a.year)}</div>
+          <div class="flex items-start justify-between gap-3">
+            <div class="min-w-0 pr-2">
+              <div class="text-sm font-semibold leading-snug">${escapeHtml(a.title)}</div>
+              ${a.issuer ? `<div class="mt-1 text-xs text-slate-500">${escapeHtml(a.issuer)}</div>` : ``}
+            </div>
+            <div class="shrink-0 text-xs text-slate-500">${escapeHtml(a.year)}</div> 
           </div>
           <p class="mt-3 text-sm text-slate-700">${escapeHtml(a.desc)}</p>
         </div>
@@ -1055,13 +1103,39 @@ document.getElementById("footerEmail2").textContent = siteData.email;
       `).join("");
 
       // Certifications table
-      $("#certTable").innerHTML = siteData.certifications.map(c => `
-        <tr class="bg-white">
-          <td class="px-4 py-3 font-medium text-slate-900">${escapeHtml(c.name)}</td>
-          <td class="px-4 py-3 text-slate-700">${escapeHtml(c.issuer)}</td>
-          <td class="px-4 py-3 text-slate-700">${escapeHtml(c.year)}</td>
-        </tr>
-      `).join("");
+$("#certTable").innerHTML = siteData.certifications.map(c => `
+  <tr class="bg-white">
+    <td class="px-4 py-3 font-medium text-slate-900">
+      <div class="flex items-center justify-between gap-3">
+        <span>${escapeHtml(c.name)}</span>
+
+        ${c.pdf ? `
+          <button
+            type="button"
+            class="shrink-0 inline-flex items-center rounded-lg bg-slate-50 px-2 py-1 text-xs font-medium text-slate-700 ring-soft hover:bg-slate-100"
+            data-cert-pdf="${escapeHtml(c.pdf)}"
+            data-cert-title="${escapeHtml(c.name)}"
+          >
+            Lihat PDF
+          </button>
+        ` : ``}
+      </div>
+    </td>
+    <td class="px-4 py-3 text-slate-700">${escapeHtml(c.issuer)}</td>
+    <td class="px-4 py-3 text-slate-700">${escapeHtml(c.year)}</td>
+  </tr>
+`).join("");
+
+// bind click tombol pdf (wajib agar tombolnya berfungsi)
+$$("[data-cert-pdf]").forEach(btn => {
+  btn.addEventListener("click", () => {
+    openPdfModal(
+      btn.getAttribute("data-cert-title"),
+      btn.getAttribute("data-cert-pdf")
+    );
+  });
+});
+
 
       // Footer year
       $("#year").textContent = String(new Date().getFullYear());
@@ -1271,6 +1345,60 @@ document.getElementById("footerEmail2").textContent = siteData.email;
       });
     }
 
+        /* -----------------------------
+      PDF MODAL (SERTIFIKAT)
+    ------------------------------*/
+    let lastFocusedPdfEl = null;
+
+    function openPdfModal(title, pdfUrl) {
+      if (!pdfUrl) return;
+
+      lastFocusedPdfEl = document.activeElement;
+
+      $("#pdfTitle").textContent = title || "Bukti Sertifikat";
+      const viewerUrl = `${pdfUrl}#toolbar=0&navpanes=0&scrollbar=1`;
+
+      $("#pdfFrame").setAttribute("src", viewerUrl);
+      $("#pdfOpenNew").setAttribute("href", pdfUrl);
+      $("#pdfDownload").setAttribute("href", pdfUrl);
+      
+      const overlay = $("#pdfOverlay");
+      overlay.classList.remove("hidden");
+      overlay.classList.add("flex");
+
+      $("#pdfClose").focus();
+      document.body.style.overflow = "hidden";
+    }
+
+    function closePdfModal() {
+      const overlay = $("#pdfOverlay");
+      overlay.classList.add("hidden");
+      overlay.classList.remove("flex");
+
+      $("#pdfFrame").setAttribute("src", "");
+      document.body.style.overflow = "";
+
+      if (lastFocusedPdfEl && typeof lastFocusedPdfEl.focus === "function") {
+        lastFocusedPdfEl.focus();
+      }
+    }
+
+    function setupPdfModalEvents() {
+      $("#pdfClose").addEventListener("click", closePdfModal);
+      $("#pdfSecondary").addEventListener("click", closePdfModal);
+
+      $("#pdfOverlay").addEventListener("click", (e) => {
+        if (e.target === $("#pdfOverlay")) closePdfModal();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          const overlay = $("#pdfOverlay");
+          if (!overlay.classList.contains("hidden")) closePdfModal();
+        }
+      });
+    }
+
     /* -----------------------------
       PROJECT FILTER
     ------------------------------*/
@@ -1358,6 +1486,7 @@ document.getElementById("footerEmail2").textContent = siteData.email;
       setupScrollSpy();
       setupCountUp();
       setupModalEvents();
+      setupPdfModalEvents();
       setupProjectFilter();
       setupForm();
 
